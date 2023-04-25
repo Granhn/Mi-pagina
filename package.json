@@ -1,0 +1,15 @@
+{
+  "name": "mipagina",
+  "version": "1.0.0",
+  "description": "Mi pagina web persnal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "sergey --watch",
+    "start": "sergey"
+  },
+  "author": "trismegistodiegoh",
+  "license": "MIT",
+  "dependencies": {
+    "sergey": "^0.0.13"
+  }
+}
