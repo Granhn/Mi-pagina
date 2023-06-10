@@ -4,21 +4,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Primeros pasos con sergey</title>
-        
-        <link rel="stylesheet" href="./assets/normalize.css">
-        <link rel="stylesheet" href="./assets/style.css">
-        <link rel="stylesheet" href="./assets/header.css">
-        <link rel="stylesheet" href="./assets/footer.css">
+        <title>Diego Fuenzalida 🤓</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" href="assets/solarpunk.jpeg">
         
     </head>
-    <body>
+    <body> 
         <sergey-import src="header"/>
-        <main>
-            <h3>Hola</h3>
-            <p>Este se edita</p>
-        </main>
+        <section id="inicio" class="home">
+            <article class="hero-image" style="--image:url(./assets/hero-image.jpeg); --attachment:fixed;">
+                <aside class="hero-image-opacity" style="--opacity-color:var(--black-alpha-color)">
+                    <div class="hero-image-content">
+                        <h2 class="hero-image-title">Bienvenid@s a <br>mi sitio!!</h2>
+                    </div>
+                </aside>
+            </article>
+        </section>
+        <section id="acerca" class="about container">
+            <article>
+                <aside class="slogan">
+                    <h1>Diego Fuenzalida</h1>
+                    <h5>Desarrollador web</h5>
+                </aside>
+                <p>
+                    Un chico (joven para unos, señor para otros) de 23 años que se nutre y crece con el desarrollo web. Actualmente, me encuentro en busca de chamba (trabajo) a la vez que mejoro y aprendo más sobre estas tecnologías.
+                </p>
+                <p>
+                    Entré a estudiar informática en Valparaíso en 2018, terminé mis estudios para el 2022 y desde entonces me encuentro mejorando mis habilidades para crear páginas y web apps.<br>
+                    Me interesa también aprender sobre cinematografía, siempre me ha llamado la atención los videos musicales y cómo estos, siendo <a href="https://www.youtube.com/watch?v=sOnqjkJTMaA" target="_blank" rel="noopener">increíblemente producidos</a> o <a href="https://www.youtube.com/watch?v=D18yUfX0lWQ" target="_blank" rel="noopener">siendo grabados en una tarde más con amigos</a>, pueden lograr una estética tan llamativa (con ayuda de la edición también jeje).
+                </p>
+            </article>
+            <article class="about-image">
+                <img src="assets/Crisssss.jpeg" alt="Cristiano Ronaldo">
+            </article>
+            <article>
+                <h2 class="article-title large-text">Cosas que me gustan</h2>
+                <div class="interests text-center">
+                    <div class="card">
+                        <img src="assets/Manchester-United-Logo.png" alt="Manchest united logo">
+                        <div class="card-content">
+                            <h4>Manchester United</h4>
+                            <span>Equipo de futbol</span>
+                        </div>
+                        <p>Mi equipo favorito de futbol, poco a poco vuelven a su gloria bajo la mano de Erik Ten Hag, mi jugador favorito del equipo es por el momento Casemiro y Diogo Dalot</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/wh40k.png" alt="Ultramarine">
+                        <div class="card-content">
+                            <h4>Warhammer 40k</h4>
+                            <span>Mundo ficticio</span>
+                            
+                        </div>
+                        <p>El mundo mas <i>grim dark</i> que puede existir, el imperio humano: fanaticos religiosos que odian a los aliens, una galaxia en un estado de guerra constante llena de aliens y odio, tambien tiene su propio infierno</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/skei.png" alt="Skate">
+                        <div class="card-content">
+                            <h4>Skateboard</h4>
+                            <span>Deporte</span>
+                        </div>
+                        <p>Mi deporte de eleccion, divertido y me mantiene sano y no hay mejor sensacion que caer un truco despues de intentarlo por semanas</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/nature.png" alt="Naturaleza">
+                        <div class="card-content">
+                            <h4>Naturaleza</h4>
+                            <span>Pues eso</span>
+                        </div>
+                        <p>Me gusta la naturaleza y me interesa llevar una vida sustentable, reciclando e investigando sobre fuentes de energias para usar en el hogar</p>
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+        <section id="conocimientos" class="knowledge">
+            <h2>conocimientos</h2>
+        </section>
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2> 
+        </section>
         <sergey-import src="footer"/>
+        <script src="./script.js"></script>
     </body>
 </html> 
