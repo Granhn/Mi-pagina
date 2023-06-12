@@ -98,15 +98,27 @@ p{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: var(--opacity-color);
     justify-content: center;
     align-items: center;
+}
+
+.links{
+    display: flex;
+}
+.links a{
+    margin: 0 2rem 0 2rem;
+}
+.links a img{
+    height: 7.5vw;
 }
 .hero-image-content h2{
     font-size: 7.5vh;
     color: #EEEE;
     text-align: center;
 }
+
 
 /************* Menu **************/
 .menu-btn{
@@ -203,6 +215,7 @@ p{
     max-width: var(--max-width);
     margin-right: auto;
     margin-left: auto;
+    
 }
 .large-text{
     font-size: 5vw;
@@ -212,14 +225,37 @@ p{
 .none{
     display: none;
 }
+.section{
+    padding: 2rem 1rem;
+}
+
 .text-center{
     text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+@media screen and (min-width: 1024px){
+    .text-lg-center{
+        text-align: center;
+    }
+    .text-lg-left{
+        text-align: left;
+    }
+    .text-lg-right{
+        text-align: right;
+    }
 }
 
 /************* Site Styles **************/
 .about{
     background-color: var(--gray-light-color);
     padding: 1rem;
+    margin: 2rem auto;
+
 }
 .about-image{
     max-width: 70vw;
@@ -233,6 +269,9 @@ p{
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+}
+.interests a{
+    text-decoration: none;
 }
 .card{
     text-decoration: none;
@@ -295,6 +334,15 @@ p{
 }
 @media screen and (min-width: 1024px){
     
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        padding: 2rem 1rem;
+    }
+    .interests{
+        grid-column: span 2;
+    }
+    
     .card{
         display: flex;
         flex-direction: row;
@@ -304,16 +352,22 @@ p{
         background-color: var(--second-color);
         border-radius: 0.625rem;
         padding: 0.5rem;
-        width: 100%;
+        width: auto;
+        max-width: 1206;
         height: 10rem;
+        margin-right: auto;
+        margin-left: auto;
     }
     .card img{
         width: 6.75rem;
-        height: auto;
+        height: 128px;
     }
     .card p{
         display:inline-block;
         width: 33.333%;
+    }
+    .interests a{
+        width: 100%;
     }
     .card-content{
         margin-left: 0.5rem;
