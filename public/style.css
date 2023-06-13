@@ -298,6 +298,18 @@ p{
     margin-left: 0.5rem;
     color: var(--white-color);
 }
+.front{
+    padding: 2rem;
+    width: 80%;
+    height: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.front img{
+    size: auto;
+    width: auto;
+    
+}
 .header{
     position: fixed;
     left: 0;
@@ -315,7 +327,9 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-
+.knowledge{
+    text-align: center;
+}
 .logo a{
     color: var(--first-color);
     font-weight: bold;
@@ -325,6 +339,8 @@ p{
 .slogan{
     text-align: center;
 }
+
+
 @media screen and (min-width: 768px){
     .interests{
         display: flex;
